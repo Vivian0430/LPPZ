@@ -1,0 +1,71 @@
+$(document).ready(function(){
+				$(".guan").mouseenter(function(){
+					$(this).children("ul").show();
+					$(this).css("background-color","#ec6d3d");
+					$(this).children("ul").css("background-color","#ec6d3d");
+				})
+				$(".guan").mouseleave(function(){
+					$(this).children("ul").hide();
+					$(this).css("background-color","#E24D2A");
+				})
+		})
+$(document).ready(function(){
+				$(".xin").mouseenter(function(){
+					$(this).children("ul").show();
+					$(this).css("background-color","#ec6d3d");
+					$(this).children("ul").css("background-color","#ec6d3d");
+				})
+				$(".xin").mouseleave(function(){
+					$(this).children("ul").hide();
+					$(this).css("background-color","#E24D2A");
+				})
+		})
+$(document).ready(function(){
+				$(".chan").mouseenter(function(){
+					$(this).children("ul").show();
+					$(this).css("background-color","#ec6d3d");
+					$(this).children("ul").css("background-color","#ec6d3d");
+				})
+				$(".chan").mouseleave(function(){
+					$(this).children("ul").hide();
+					$(this).css("background-color","#E24D2A");
+				})
+		})
+$(document).ready(function(){
+				$(".jia").mouseenter(function(){
+					$(this).children("ul").show();
+					$(this).css("background-color","#ec6d3d");
+					$(this).children("ul").css("background-color","#ec6d3d");
+				})
+				$(".jia").mouseleave(function(){
+					$(this).children("ul").hide();
+					$(this).css("background-color","#E24D2A");
+				})
+		})
+$(document).ready(function(){
+				$(".da").mouseenter(function(){
+					$(this).children("ul").show();
+					$(this).css("background-color","#ec6d3d");
+					$(this).children("ul").css("background-color","#ec6d3d");
+				})
+				$(".da").mouseleave(function(){
+					$(this).children("ul").hide();
+					$(this).css("background-color","#E24D2A");
+				})
+		})
+$(document).ready(function(){
+				$(".he").mouseenter(function(){
+					$(this).css("background-color","#ec6d3d");
+				})
+				$(".he").mouseleave(function(){
+					$(this).css("background-color","#E24D2A");
+				})
+		})
+$(document).ready(function(){
+				$(".ru").mouseenter(function(){
+					$(this).css("background-color","#ec6d3d");
+				})
+				$(".ru").mouseleave(function(){
+					$(this).css("background-color","#E24D2A");
+				})
+		})

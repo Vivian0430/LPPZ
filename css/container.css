@@ -1,0 +1,56 @@
+.content .container {
+	height: 490px;
+	position: absolute;
+	left: 0;
+	top: 80px;
+	right: 0;
+}
+
+.container .beijing {
+	height: 490px;
+	width: 65%;
+	position: absolute;
+	top: 0px;
+	left: 220px;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+.container .wrapper {
+	position: absolute;
+	bottom: 5px;
+	right: 170px;
+	width: 216px;
+	height: 154px;
+	overflow: hidden;
+	z-index: 999;
+}
+
+.wrapper img{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+ol {
+	position: absolute;
+	right: 0;
+	bottom: 5px;
+	width: 154px;
+}
+
+ol li {
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: default;
+	background-color: #FFFFFF;
+}
+
+ol li.current {
+	background-color: #CC3333;
+}

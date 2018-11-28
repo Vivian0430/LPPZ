@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>大宗采购</title>
+		<link rel="stylesheet" type="text/css" href="css/purchase.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<style>
+			li {
+				list-style: none;
+			}
+			
+			.middle ul {
+				position: absolute;
+				display: none;
+			}
+			
+			.guan ul {
+				position: absolute;
+				width: 1366px;
+				height: 120px;
+				float: left;
+				top: 70px;
+				left: -392px;
+				z-index: 1;
+			}
+			
+			.xin ul {
+				position: absolute;
+				width: 1366px;
+				height: 120px;
+				float: left;
+				top: 70px;
+				left: -492px;
+				z-index: 1;
+			}
+			
+			.chan ul {
+				position: absolute;
+				width: 1366px;
+				height: 240px;
+				float: left;
+				top: 70px;
+				left: -592px;
+				z-index: 1;
+			}
+			
+			.jia ul {
+				position: absolute;
+				width: 1366px;
+				height: 120px;
+				float: left;
+				top: 70px;
+				left: -792px;
+				z-index: 1;
+			}
+			
+			.da ul {
+				position: absolute;
+				width: 1366px;
+				height: 120px;
+				float: left;
+				top: 70px;
+				left: -892px;
+				z-index: 1;
+			}
+			
+			.middle ul li {
+				position: relative;
+				left: 80px;
+				top: 0;
+				float: left;
+				margin-left: 20px;
+				z-index: 1;
+			}
+			
+			.rubberBand {
+				animation-name: rubberBand;
+			}
+			
+			.aniE1 {
+				animation-delay: 0.1s;
+			}
+			
+			.aniE3 {
+				animation-delay: 0.3s;
+			}
+			
+			.aniE5 {
+				animation-delay: 0.5s;
+			}
+			
+			.aniE8 {
+				animation-delay: 0.8s;
+			}
+			
+			.aniD1 {
+				animation-duration: 1s;
+			}
+			
+			.aniDe1 {
+				animation-delay: 1s;
+			}
+			
+			.aniDe1E5 {
+				animation-delay: 1.5s;
+			}
+			
+			.aniDe2 {
+				animation-delay: 2s;
+			}
+			
+			.aniDe2E5 {
+				animation-delay: 2.5s;
+			}
+			.aniDe3 {
+				animation-delay: 3s;
+			}
+			.aniDe2E5 {
+				animation-delay: 3.5s;
+			}
+			.fadeInDown {
+				animation-name: fadeInDown;
+			}
+			
+			.fadeInLeft {
+				animation-name: fadeInLeft;
+			}
+			
+			.rotateInDownLeft {
+				animation-name: rotateInDownLeft;
+			}
+			
+			.fadeIn {
+				animation-name: fadeIn;
+			}
+			
+			.animated {
+				animation-duration: 1s;
+				animation-fill-mode: both;
+			}
+			
+			@keyframes rubberBand {
+				0% {
+					transform: scale3d(1, 1, 1);
+				}
+				30% {
+					transform: scale3d(1.25, 0.75, 1);
+				}
+				40% {
+					transform: scale3d(0.75, 1.25, 1);
+				}
+				50% {
+					transform: scale3d(1.15, 0.85, 1);
+				}
+				65% {
+					transform: scale3d(.95, 1.05, 1);
+				}
+				75% {
+					transform: scale3d(1.05, .95, 1);
+				}
+				100% {
+					transform: scale3d(1, 1, 1);
+				}
+			}
+			
+			@keyframes fadeInDown {
+				0% {
+					opacity: 0;
+					transform: translate3d(0, -100%, 0);
+				}
+				100% {
+					opacity: 1;
+					transform: none;
+				}
+			}
+			
+			@keyframes fadeInLeft {
+				0% {
+					opacity: 0;
+					transform: translate3d(-100%, 0, 0);
+				}
+				100% {
+					opacity: 1;
+					transform: none;
+				}
+			}
+			
+			@keyframes rotateInDownLeft {
+				0% {
+					transform-origin: left bottom;
+					transform: rotate3d(0, 0, 1, -45deg);
+					opacity: 0;
+				}
+				100% {
+					transform-origin: left bottom;
+					transform: none;
+					opacity: 1;
+				}
+			}
+			
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/nav.js"></script>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="head">
+				<a class="logo" href="良品铺子.html"><img src="img/logo.png" class="rubberBand animated" /></a>
+				<div class="middle">
+
+					<div class="guan">
+						<a href="关于我们.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">关于我们</a>
+						<ul>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a1.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a2.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a3.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a4.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a5.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a6.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a7.png" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="xin">
+						<a href="新闻中心.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">新闻中心</a>
+						<ul>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-b1.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-b2.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-b3.png" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="chan">
+						<a href="产品之家.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">产品之家</a>
+						<ul>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c1.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c2.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c3.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c4.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c5.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c6.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c7.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c8.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c9.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c10.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c11.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c12.png" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="he">
+						<a href="#" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px; font-family: arial;"> 核桃TV</a>
+					</div>
+					<div class="jia">
+						<a href="加盟信息.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">加盟信息</a>
+						<ul>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-d1.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-d2.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-d3.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-d4.png" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="da">
+						<a href="大宗采购.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">大宗采购</a>
+						<ul>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-e1.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-e2.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-e3.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-e4.png" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="ru">
+						<a href="#" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">加入我们</a>
+					</div>
+
+				</div>
+				<div class="right">
+					<ul>
+						<li style="color: #FFFFFF;position: relative;top: 6px;">|</li>
+						<li>
+							<a class="app" target="_blank"><b>APP</b></a>
+						</li>
+						<li class="store">
+							<a href="#"><b>在线商城</b></a>
+						</li>
+						<li class="vip">
+							<a href="#"><b>VIP</b></a>
+						</li>
+						<li class="cont">
+							<a href="#"><b>联系方式</b></a>
+						</li>
+					</ul>
+				</div>
+				<div class="last">
+					<select name="" id="opt">
+						<option value="-1">简</option>
+						<option value="">EN</option>
+						<option value="">繁</option>
+					</select>
+				</div>
+			</div>
+			<div class="guodu">
+			</div>
+			<div class="main">
+				<div class="box1">
+					<div class="tupian1"><img src="img/bg-cols-t14.png" class="fadeInDown animated aniD1 aniE3" style="position: absolute;top: 80px;left: 75px;" /></div>
+					<div class="tupian2"><img src="img/大宗采购/3.PNG" class="fadeInLeft animated aniD1 aniE5" style="position: absolute;top: 146px;left: 106px;" /></div>
+					<div class="tupian3">
+						<ul>
+							<li style="width: 270px;height: 280px;float: left;"><img src="img/大宗采购/img-flow-a1.png" style="width: 180px;height: 280px;" class="fadeInLeft animated aniD1 aniDe1" /></li>
+							<li style="width: 270px;height: 280px;float: left;"><img src="img/大宗采购/img-flow-a2.png" style="width: 180px;height: 280px;" class="fadeInLeft animated aniD1 aniDe1E5" /></li>
+							<li style="width: 270px;height: 280px;float: left;"><img src="img/大宗采购/img-flow-a3.png" style="width: 180px;height: 280px;" class="fadeInLeft animated aniD1 aniDe2" /></li>
+							<li style="width: 270px;height: 280px;float: left;"><img src="img/大宗采购/img-flow-a4.png" style="width: 180px;height: 280px;" class="fadeInLeft animated aniD1 aniDe2E5" /></li>
+						</ul>
+					</div>
+					<hr style="border: dashed 1px grey;width: 1080px;position: absolute;top: 636px;left: 127px;">
+					<div class="tupian4">
+						<img src="img/大宗采购/1.PNG" class="rotateInDownLeft animated aniE1" style="position: absolute;bottom: 380px;left: 126px;" />
+					</div>
+					<div class="tupian5">
+						<img src="img/大宗采购/2.PNG" class="fadeInLeft animated aniE3" style="position: absolute;bottom: 40px;left: 130px;" />
+					</div>
+					<div class="wenzi1">
+						<ul>
+							<li><span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;position: relative;left: 0;top: 25px;" class="fadeInDown animated aniDe1">本团购政策适用各个实体门店；</span></li>
+							<li><span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;position: relative;left: 0;top: 25px;" class="fadeInDown animated aniDe1E5">团购政策里面的产品，全部为门店团购清单产品，顾客可享受团购产品团购政策价格，没有被选进入团购清单的产品不能参加团购，只能做零售；</span></li>
+							<li><span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;position: relative;left: 0;top: 35px;" class="fadeInDown animated aniDe2">团购商品的支付方式只接受刷银联卡和现金，不支持消费卡、电子券等其他支付方式；</span></li>
+							<li><span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;position: relative;left: 0;top: 35px;" class="fadeInDown animated aniDe2E5">折扣政策建立在系统零售正价基础上；</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="box2">
+					<div class="tupian6"><img src="img/大宗采购/4.PNG" class="fadeInLeft animated aniD1 aniE5" style="position: absolute;top: 45px;left: 90px;" /></div>
+					<div class="tupian7">
+						<ul>
+							<li style="width: 360px;height: 280px;float: left;"><img src="img/大宗采购/img-flow-a5.png" style="width: 180px;height: 280px;" class="fadeInLeft animated aniD1 aniDe1" /></li>
+							<li style="width: 360px;height: 280px;float: left;"><img src="img/大宗采购/img-flow-a6.png" style="width: 180px;height: 280px;" class="fadeInLeft animated aniD1 aniDe1E5" /></li>
+							<li style="width: 360px;height: 280px;float: left;"><img src="img/大宗采购/img-flow-a7.png" style="width: 180px;height: 280px;" class="fadeInLeft animated aniD1 aniDe2" /></li>
+						</ul>
+					</div>
+					<hr style="border: dashed 1px white;width: 1080px;position: absolute;top: 636px;left: 127px;">
+					<div class="tupian8">
+						<img src="img/大宗采购/5.PNG" class="rotateInDownLeft animated aniE1" style="position: absolute;bottom: 420px;left: 126px;" />
+					</div>
+					<div class="tupian9">
+						<img src="img/大宗采购/6.PNG" class="fadeInLeft animated aniE3" style="position: absolute;bottom: 70px;left: 140px;" />
+					</div>
+					<div class="wenzi2">
+						<ul>
+							<li><span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;position: relative;left: 0;top: 20px;color: white;" class="fadeInDown animated aniDe1">单次购买5000元以上方可享受团购政策；</span></li>
+							<li><span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;position: relative;left: 0;top: 25px;color: white;" class="fadeInDown animated aniDe1E5">消费卡在门店仅限购买零售产品，视同现金；</span></li>
+							<li><span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;position: relative;left: 0;top: 35px;color: white;" class="fadeInDown animated aniDe2">未经授权，消费卡不允许在良品铺子平台进行二次销售；</span></li>
+							<li><span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;position: relative;left: 0;top: 35px;color: white;" class="fadeInDown animated aniDe2E5">消费卡的购买，只接受现金和银联刷卡，支付宝微信等不接受。</span></li>
+						</ul>
+					</div>
+				</div>
+				<!--box2结束-->
+				<div class="box3">
+					<div class="cont1">
+						<img src="img/大宗采购/7.PNG" class="fadeInLeft animated aniD1 aniE5" style="position: absolute;top: 100px;left: 110px;" />
+					</div>
+					<div class="tupian10">
+						<img src="img/大宗采购/8.PNG" class="fadeIn animated aniD1 aniE8" style="position: absolute;top: 220px;left: 117px;" />
+					</div>
+					<div class="tupian11">
+						<img src="img/大宗采购/9.PNG" class="fadeIn animated aniD1 aniE8" style="position: absolute;top: 227px;left: 587px;" />
+					</div>
+					<div class="tupian12">
+						<ul>
+							<li style="width: 226px;height: 260px;float: left;"><img src="img/大宗采购/img-flow-a8.png" style="width: 200px;height: 260px;" class="fadeInLeft animated aniDe1E5" /></li>
+							<li style="width: 226px;height: 260px;float: left;"><img src="img/大宗采购/img-flow-a9.png" style="width: 200px;height: 260px;" class="fadeInLeft animated aniDe2"/></li>
+							<li style="width: 226px;height: 260px;float: left;"><img src="img/大宗采购/img-flow-a10.png" style="width: 200px;height: 260px;" class="fadeInLeft animated aniDe2E5" /></li>
+							<li style="width: 226px;height: 260px;float: left;"><img src="img/大宗采购/img-flow-a11.png" style="width: 200px;height: 260px;" class="fadeInLeft animated aniDe3"/></li>
+							<li style="width: 216px;height: 260px;float: left;"><img src="img/大宗采购/img-flow-a12.png" style="width: 200px;height: 260px;" class="fadeInLeft animated aniDe3E5"/></li>
+						</ul>
+					</div>
+					<hr style="border: dashed 1px grey;width: 1080px;position: absolute;top: 676px;left: 127px;" class="rotateInDownLeft animated aniE1">
+					<div class="tupian13">
+						<img src="img/大宗采购/1.PNG" style="position: absolute;bottom: 540px;left: 126px;" class="rotateInDownLeft animated aniE1" />
+					</div>
+						<div class="tupian14">
+						<img src="img/大宗采购/10.PNG" class="fadeInLeft animated aniE3" style="position: absolute;bottom: 200px;left: 130px;" />
+					</div>
+					<div class="wenzi3">
+						<ul>
+							<li><span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;position: relative;left: 0;top: 20px;color: grey;" class="fadeInDown animated aniDe1">单次购买5000元以上方可享受团购政策；</span></li>
+							<li><span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;position: relative;left: 0;top: 25px;color: grey;" class="fadeInDown animated aniDe1E5">消费卡在门店仅限购买零售产品，视同现金；</span></li>
+							<li><span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;position: relative;left: 0;top: 35px;color: grey;" class="fadeInDown animated aniDe2">未经授权，消费卡不允许在良品铺子平台进行二次销售；</span></li>
+							<li><span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;position: relative;left: 0;top: 35px;color: grey;" class="fadeInDown animated aniDe2E5">消费卡的购买，只接受现金和银联刷卡，支付宝微信等不接受。</span></li>
+						</ul>
+					</div>
+					<div class="tupian15"><img src="img/大宗采购/11.PNG" class="fadeInDown animated aniE1" style="position: absolute;bottom:0px ;left: 140px;" /></div>
+				</div>
+				<div class="box4">
+					<img src="img/bg-cols-b6.jpg" style="width: 100%;height: 100%;position: absolute;top: 200px;" />
+				</div>
+				<div class="box5">
+					<div class="wenzi">
+						<div class="hubei"><span>Copyright © 湖北良品铺子食品有限公司 2018 版权所有 <a href="#" style="color: gray;">鄂ICP备09021577号</a></span></div>
+					</div>
+				</div>
+			</div>
+	</body>
+
+</html>

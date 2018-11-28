@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>关于我们</title>
+		<link rel="stylesheet" type="text/css" href="css/about.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<style>
+			li{
+				list-style: none;
+			}
+			.middle ul{
+				position: absolute;
+				display: none;
+			}
+			
+			.guan  ul{
+				position: absolute;
+				width: 1366px;
+				height: 120px;
+				float: left;
+				top:70px;
+				left:-392px;
+				z-index: 1;
+			}
+			.xin ul{
+				position: absolute;
+				width: 1366px;
+				height: 120px;
+				float: left;
+				top:70px;
+				left:-492px;
+				z-index: 1;
+			}
+			.chan ul{
+				position: absolute;
+				width: 1366px;
+				height: 240px;
+				float: left;
+				top:70px;
+				left:-592px;
+				z-index: 1;
+			}
+			.jia ul{
+				position: absolute;
+				width: 1366px;
+				height: 120px;
+				float: left;
+				top:70px;
+				left:-792px;
+				z-index: 1;
+			}
+			.da ul{
+				position: absolute;
+				width: 1366px;
+				height: 120px;
+				float: left;
+				top:70px;
+				left:-892px;
+				z-index: 1;
+			}
+			.middle  ul li{
+				position: relative;
+				left: 80px;
+				top: 0;
+				float: left;
+				margin-left: 20px;
+				z-index: 1;
+			}
+			.animated {
+				animation-duration: 1s;
+				animation-fill-mode: both;
+			}
+			
+			.rubberBand {
+				animation-name: rubberBand;
+			}
+			
+			.fadeInDown {
+				animation-name: fadeInDown;
+			}
+			
+			.fadeIn {
+				animation-name: fadeIn;
+			}
+			
+			.bounceInLeft {
+				animation-name: bounceInLeft;
+			}
+			
+			.bounceInRight {
+				animation-name: bounceInRight;
+			}
+			
+			.aniE1 {
+				animation-delay: 0.1s;
+			}
+			
+			.aniE2 {
+				animation-delay: 0.2s;
+			}
+			
+			.aniE3 {
+				animation-delay: 0.3s;
+			}
+			
+			.aniE4 {
+				animation-delay: 0.4s;
+			}
+			
+			.aniE5 {
+				animation-delay: 0.5s;
+			}
+			
+			.aniE8 {
+				animation-delay: 0.8s;
+			}
+			
+			.aniD1 {
+				animation-duration: 1s;
+			}
+			
+			.aniDe1 {
+				animation-delay: 1s;
+			}
+			
+			@keyframes rubberBand {
+				0% {
+					transform: scale3d(1, 1, 1);
+				}
+				30% {
+					transform: scale3d(1.25, 0.75, 1);
+				}
+				40% {
+					transform: scale3d(0.75, 1.25, 1);
+				}
+				50% {
+					transform: scale3d(1.15, 0.85, 1);
+				}
+				65% {
+					transform: scale3d(.95, 1.05, 1);
+				}
+				75% {
+					transform: scale3d(1.05, .95, 1);
+				}
+				100% {
+					transform: scale3d(1, 1, 1);
+				}
+			}
+			
+			@keyframes fadeInDown {
+				0% {
+					opacity: 0;
+					transform: translate3d(0, -100%, 0);
+				}
+				100% {
+					opacity: 1;
+					transform: none;
+				}
+			}
+			
+			@keyframes bounceInLeft {
+				0% {
+					opacity: 0;
+					transform: translate3d(-3000px, 0, 0);
+				}
+				60% {
+					opacity: 1;
+					transform: translate3d(25px, 0, 0);
+				}
+				75% {
+					transform: translate3d(-10px, 0, 0);
+				}
+				90% {
+					transform: translate3d(5px, 0, 0);
+				}
+				100% {
+					transform: none;
+				}
+			}
+			
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			
+			@keyframes bounceInRight {
+				0% {
+					opacity: 0;
+					transform: translate3d(3000px, 0, 0);
+				}
+				60% {
+					opacity: 1;
+					transform: translate3d(-25px, 0, 0);
+				}
+				75% {
+					transform: translate3d(10px, 0, 0);
+				}
+				90% {
+					transform: translate3d(-5px, 0, 0);
+				}
+				100% {
+					transform: none;
+				}
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/nav.js" ></script>
+
+	</head>
+	<body>
+		<div class="content">
+			<div class="head"><a class="logo">
+				<a class="logo" href="良品铺子.html"><img src="img/logo.png"  class="rubberBand animated"/></a>
+				<div class="middle">
+				
+						<div class="guan">
+						<a href="关于我们.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">关于我们</a>
+							<ul>
+								<li><a href="#"><img src="img/icons/icon-menu-a1.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-a2.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-a3.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-a4.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-a5.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-a6.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-a7.png"/></a></li>
+							</ul>
+						</div>
+						<div class="xin">
+						<a href="新闻中心.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">新闻中心</a>
+							<ul>
+								<li><a href="#"><img src="img/icons/icon-menu-b1.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-b2.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-b3.png"/></a></li>
+							</ul>
+						</div>
+						<div class="chan">
+						<a href="产品之家.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">产品之家</a>
+							<ul>
+								<li><a href="#"><img src="img/icons/icon-menu-c1.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-c2.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-c3.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-c4.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-c5.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-c6.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-c7.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-c8.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-c9.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-c10.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-c11.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-c12.png"/></a></li>
+							</ul>
+						</div>
+						<div class="he">
+							<a href="#" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px; font-family: arial;"> 核桃TV</a>
+						</div>
+						<div class="jia">
+						<a href="加盟信息.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">加盟信息</a>
+							<ul>
+								<li><a href="#"><img src="img/icons/icon-menu-d1.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-d2.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-d3.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-d4.png"/></a></li>
+							</ul>
+						</div>
+						<div class="da">
+						<a href="大宗采购.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">大宗采购</a>
+							<ul>
+								<li><a href="#"><img src="img/icons/icon-menu-e1.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-e2.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-e3.png"/></a></li>
+								<li><a href="#"><img src="img/icons/icon-menu-e4.png"/></a></li>
+							</ul>
+						</div>
+						<div class="ru">
+							<a href="#" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">加入我们</a>
+						</div>
+					
+				</div>
+				<div class="right">
+					<ul>
+						<li style="color: #FFFFFF;position: relative;top: 6px;">|</li>
+						<li>
+							<a class="app" target="_blank"><b>APP</b></a>
+						</li>
+						<li class="store">
+							<a href="#"><b>在线商城</b></a>
+						</li>
+						<li class="vip">
+							<a href="#"><b>VIP</b></a>
+						</li>
+						<li class="cont">
+							<a href="#"><b>联系方式</b></a>
+						</li>
+					</ul>
+				</div>
+				<div class="last">
+					<select name="" id="opt">
+						<option value="-1">简</option>
+						<option value="">EN</option>
+						<option value="">繁</option>
+					</select>
+				</div>
+			</div>
+			<div class="guodu">
+			</div>
+							<div class="main">
+				<div class="box1">
+					<div class="cont1 fadeInDown animated aniD1 aniE3">
+						<img src="img/bg-cols-t1.png" width="152px" height="40px" />
+					</div>
+					<hr class="bounceInLeft animated aniE3" style="width: 175px; background-color:#F04E28; height: 3px;position: absolute;left: 0;top: 185px;" />
+					<div class="pz bounceInLeft animated aniE3" style="position: absolute;left: 210px;top: 180px;">
+						<img src="img/tmpl-about-a2.png" />
+					</div>
+					<div class="wenzi1" style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;">
+						<p class="p1 fadeIn animated aniE8">
+							我们是一家专业品牌连锁运营公司，旨在成为休闲零<br> 食第一品牌。引导并超越零食固有的品牌形象和销售模
+							<br> 式，挖掘更多文化与品质深度。我们致力于休闲食品的研
+							<br> 发、加工、分装、零售服务等专业品牌质量与文化的打
+							<br> 造。同时我们深入线下连锁和线上电商同步发展，现已成
+							<br> 为全渠道、全品类、O2O发展的典范。品牌的成长离不开每
+							<br> 一位员工的付出，“品质·快乐·家”的文化让员工与企
+							<br> 业一起成长，赢得行业尊重与社会认可。
+						</p>
+					</div>
+					<div class="tupian1 fadeIn animated aniDe1">
+						<img src="img/three-icon.jpg" style="width: 314px; height: 100px; position: absolute;top: 470px;left: 116px;" />
+					</div>
+					<div class="tupian2">
+						<img src="img/box1_right.jpg" width="714px" height="485px" style="position: absolute;top: 121px;left: 560px;" />
+					</div>
+				</div>
+				<div class="box2">
+					<div class="tupian3 bounceInLeft animated aniE3">
+						<img src="img/tmpl-about-a5.jpg" style="width: 530px;height: 830px;position: absolute;left: 80px;top: 130px;" />
+					</div>
+					<hr class="bounceInRight animated" style="width: 300px; background-color:#F04E28; height: 3px;position: absolute;right: 0;top: 50px;z-index: 1;" />
+					<div class="wenzi2">
+						<h4 class="fadeIn animated aniE1" style="color: #d74619;font-size: 17px;font-family: '黑体','微软雅黑';text-indent: 0;">-第一家门店-</h4>
+						<p class="fadeIn animated aniE1" style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;">
+							从2006年8月28日武汉广场的第一家店开业，到2017年，中国休闲零食品牌<br> 良品铺子进入到第11个年头。至今我们已拥有超过2200家门店，线下门店业务涉
+							<br> 及遍布华中、华南、华东等区域。门店经历了多次形象升级，第五代主题店“良
+							<br> 品生活馆”更打破想象，2017年5月与同道大叔合作，成为全方位休闲娱乐体验
+							<br> 馆，创造全新的生活方式。
+						</p>
+						<h4 class=" fadeIn animated aniE2" style="color: #d74619;font-size: 17px;font-family: '黑体','微软雅黑';text-indent: 0;">-湖北良品铺子电子商务有限公司-</h4>
+						<p class=" fadeIn animated aniE2" style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;">
+							2012年7月成立湖北良品铺子电子商务有限公司，为全国的消费者提供方便<br> 快捷的购物服务，目前电商公司已经稳居行业前三，2015、2016年“双十一”期
+							<br> 间在食品类大体量电商中销售飞速增长，成为全国知名电商公司。
+						</p>
+						<h4 class="fadeIn animated aniE3" style="color: #d74619;font-size: 17px;font-family: '黑体','微软雅黑';text-indent: 0;">- 湖北良品铺子物流有限公司 -</h4>
+						<p class="fadeIn animated aniE3" style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;">
+							2014年6月成立湖北良品铺子物流有限公司，并在全国建立分仓体系，为良 品铺子的高速发展提供物流支持服务。2016年5月，武汉临空港经开区（东西 湖）总投资57亿元的15个产业项目集体开工。良品铺子休闲食品产业园——良品 产业园，作为项目之一，全面启动一期项目建设。良品产业园集多个恒温级仓 储、加工生产、拣选配送、产品研发、质量检测和顾客体验、休闲观光等功能于 一体。目前该项目2017年8月仓库已经搬迁投产运营，日后，将成为为高端顾客 群解决餐桌美食和休闲即食方案的“中央大厨房”。
+						</p>
+						<h4 class="fadeIn animated aniE4" style="color: #d74619;font-size: 17px;font-family: '黑体','微软雅黑';text-indent: 0;">- 良品铺子APP -</h4>
+						<p class="fadeIn animated aniE4" style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;">
+							2017年，为更好地服务千万会员，探索线上服务、线下体验的零售新模式， 良品铺子APP应运而生。APP上线30天订单覆盖23个省82个市，上线60天装机数破 10万。未来，APP将继续为销售升级服务，推动线上线下业务的深度融合。
+						</p>
+						<h4 class="fadeIn animated aniE5" style="color: #d74619;font-size: 17px;font-family: '黑体','微软雅黑';text-indent: 0;">- 良品大厦 -</h4>
+						<p class="fadeIn animated aniE5" style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;">
+							2016年12月18日，总投资约3亿多的“良品大厦”项目正式开工建设。2017 年5月举办奠基仪式，预计2018年3月竣工验收。2018年，在良品12周年之际将正 式建成使用。届时，约3000名良品家人将入驻办公，真正实现“快乐工作，幸福 生活”！
+						</p>
+					</div>
+					<div class="cont2 bounceInRight animated">
+						<img src="img/tmpl-about-a4.jpg" style="position: absolute;right: 70px;top: 35px;" />
+					</div>
+					<div class="box3">
+						<div class="cont3 bounceInLeft animated">
+							<img src="img/tmpl-about-a6.jpg" style="position: absolute;left: 130px;top: 50px;" />
+						</div>
+						<hr class="bounceInLeft animated" style="width: 120px; background-color:#F04E28; height: 3px;position: absolute;left: 0;top: 76px;z-index: 1;" />
+						<div class="wenzi3">
+							<p style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;" class="fadeIn animated aniE2">
+								我们踏觅全球，只为提供高品质的休闲食品，用美味感动世界，鼓励生活中的普通人，坚持生 来挑剔爱创造的美好生活。
+							</p>
+							<p style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;" class="fadeIn animated aniE2">
+								我们有着“品质·快乐·家”的企业文化核心价值观，始终把产品品质和人品品质 放在第一位，用最先进的经营管理办法互相促进，帮助他人成 功，也成就自我，让良品铺子大家庭变得更优秀。我们立志成为你信赖的食 品社区和消费入口，与顾客、同事和商业伙伴之间，就像亲密的家人一样。
+							</p>
+							<h4 style="color: #d74619;font-size: 17px;font-family: '黑体','微软雅黑';text-indent: 0;" class="fadeIn animated aniE4">- 让美食享受更全、更优、更便捷 -</h4>
+							<p class="fadeIn animated aniE4" style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;">
+								我们的美食有1500多种，涉及12各类别、91个系列，并还在不断丰富， 是粉丝们公认的“零食王国”。近几年更是联合粉丝的力量，打造出多款社 交属性的定制爆款零食.未来还有更多由你定义、为你定制的美食，带你吃 出美味玩出“趣”，并将做到“食力”、“玩味”、“创造”。
+							</p>
+							<p class="fadeIn animated aniE4" style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;">
+								良品铺子秉承着品质·快乐·家的企业文化核心价值观，坚持提供高品 质食品，用美味感动世界，不断引进先进的经营管理思想，立志成为顾客信 赖的食品社区和消费入口。同时，注重员工的培养与成长，努力给所有员工 营造家的归属感。2017年，良品铺子将“好零食，挑良品”作为品牌传播诉 求，从“产地严选、原料精选、匠心美味、品质工艺、严格品控、口味研 发”六大方面为消费者精挑细选出高品质放心零食！
+							</p>
+						</div>
+						<div class="tupian4">
+							<img src="img/tmpl-about-a7.jpg" style="width: 650px;height: 600px;position: absolute;right: 0px;top: 150px;" />
+						</div>
+					</div>
+					<div class="box4">
+						<img src="img/bg-cols-b1.jpg" style="width: 100%;height: 100%;position: absolute;top: 300px;" />
+					</div>
+					<div class="box5">
+						<div class="wenzi">
+							<div class="hubei"><span>Copyright © 湖北良品铺子食品有限公司 2018 版权所有 <a href="#" style="color: gray;">鄂ICP备09021577号</a></span></div>
+						</div>
+					</div>
+					<div id="gotop" class="top">
+						<img src="image/Top.jpg" alt="" />
+					</div>
+	</body>
+</html>

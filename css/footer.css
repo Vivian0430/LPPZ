@@ -1,0 +1,26 @@
+.footer{
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: whitesmoke;
+	background-image: url(../img/bg-footer-border.png);
+	padding-top: 10px;
+}
+.footer .wenzi{
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: whitesmoke;
+}
+.wenzi .hubei{
+	text-align: center;
+	font-family: "微软雅黑";
+	position: relative;
+	top: 10px;
+	color: gray;
+	font-size: 15px;
+}

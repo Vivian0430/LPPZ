@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>加盟信息</title>
+		<link rel="stylesheet" type="text/css" href="css/message.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<style>
+			li {
+				list-style: none;
+			}
+			
+			.middle ul {
+				position: absolute;
+				display: none;
+			}
+			
+			.guan ul {
+				position: absolute;
+				width: 1366px;
+				height: 120px;
+				float: left;
+				top: 70px;
+				left: -392px;
+				z-index: 1;
+			}
+			
+			.xin ul {
+				position: absolute;
+				width: 1366px;
+				height: 120px;
+				float: left;
+				top: 70px;
+				left: -492px;
+				z-index: 1;
+			}
+			
+			.chan ul {
+				position: absolute;
+				width: 1366px;
+				height: 240px;
+				float: left;
+				top: 70px;
+				left: -592px;
+				z-index: 1;
+			}
+			
+			.jia ul {
+				position: absolute;
+				width: 1366px;
+				height: 120px;
+				float: left;
+				top: 70px;
+				left: -792px;
+				z-index: 1;
+			}
+			
+			.da ul {
+				position: absolute;
+				width: 1366px;
+				height: 120px;
+				float: left;
+				top: 70px;
+				left: -892px;
+				z-index: 1;
+			}
+			
+			.middle ul li {
+				position: relative;
+				left: 80px;
+				top: 0;
+				float: left;
+				margin-left: 20px;
+				z-index: 1;
+			}
+			
+			.rubberBand {
+				animation-name: rubberBand;
+			}
+			
+			.fadeInDown {
+				animation-name: fadeInDown;
+			}
+			
+			.zoomIn {
+				animation-name: zoomIn;
+			}
+			
+			.fadeIn {
+				animation-name: fadeIn;
+			}
+			
+			.rotateInDownLeft {
+				animation-name: rotateInDownLeft;
+			}
+			
+			.aniE1 {
+				animation-delay: 0.1s;
+			}
+			
+			.aniE3 {
+				animation-delay: 0.3s;
+			}
+			
+			.aniE8 {
+				animation-name: 0.8s;
+			}
+			
+			.aniD1 {
+				animation-duration: 1s;
+			}
+			
+			.animated {
+				animation-duration: 1s;
+				animation-fill-mode: both;
+			}
+			
+			@keyframes rubberBand {
+				0% {
+					transform: scale3d(1, 1, 1);
+				}
+				30% {
+					transform: scale3d(1.25, 0.75, 1);
+				}
+				40% {
+					transform: scale3d(0.75, 1.25, 1);
+				}
+				50% {
+					transform: scale3d(1.15, 0.85, 1);
+				}
+				65% {
+					transform: scale3d(.95, 1.05, 1);
+				}
+				75% {
+					transform: scale3d(1.05, .95, 1);
+				}
+				100% {
+					transform: scale3d(1, 1, 1);
+				}
+			}
+			
+			@keyframes fadeInDown {
+				0% {
+					opacity: 0;
+					transform: translate3d(0, -100%, 0);
+				}
+				100% {
+					opacity: 1;
+					transform: none;
+				}
+			}
+			
+			@keyframes zoomIn {
+				0% {
+					opacity: 0;
+					transform: scale3d(.3, .3, .3);
+				}
+				50% {
+					opacity: 1;
+				}
+			}
+			
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			
+			@keyframes rotateInDownLeft {
+				0% {
+					transform-origin: left bottom;
+					transform: rotate3d(0, 0, 1, -45deg);
+					opacity: 0;
+				}
+				100% {
+					transform-origin: left bottom;
+					transform: none;
+					opacity: 1;
+				}
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/nav.js"></script>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="head">
+				<a class="logo" href="良品铺子.html"><img src="img/logo.png" class="rubberBand animated" /></a>
+				<div class="middle">
+
+					<div class="guan">
+						<a href="关于我们.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">关于我们</a>
+						<ul>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a1.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a2.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a3.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a4.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a5.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a6.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-a7.png" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="xin">
+						<a href="新闻中心.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">新闻中心</a>
+						<ul>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-b1.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-b2.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-b3.png" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="chan">
+						<a href="产品之家.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">产品之家</a>
+						<ul>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c1.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c2.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c3.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c4.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c5.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c6.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c7.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c8.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c9.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c10.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c11.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-c12.png" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="he">
+						<a href="#" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px; font-family: arial;"> 核桃TV</a>
+					</div>
+					<div class="jia">
+						<a href="加盟信息.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">加盟信息</a>
+						<ul>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-d1.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-d2.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-d3.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-d4.png" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="da">
+						<a href="大宗采购.html" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">大宗采购</a>
+						<ul>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-e1.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-e2.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-e3.png" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/icons/icon-menu-e4.png" /></a>
+							</li>
+						</ul>
+					</div>
+					<div class="ru">
+						<a href="#" style="color: #fff;text-decoration: none;width: 60px;height: 15px;position: absolute;left: 20px;bottom: 22px;">加入我们</a>
+					</div>
+
+				</div>
+				<div class="right">
+					<ul>
+						<li style="color: #FFFFFF;position: relative;top: 6px;">|</li>
+						<li>
+							<a class="app" target="_blank"><b>APP</b></a>
+						</li>
+						<li class="store">
+							<a href="#"><b>在线商城</b></a>
+						</li>
+						<li class="vip">
+							<a href="#"><b>VIP</b></a>
+						</li>
+						<li class="cont">
+							<a href="#"><b>联系方式</b></a>
+						</li>
+					</ul>
+				</div>
+				<div class="last">
+					<select name="" id="opt">
+						<option value="-1">简</option>
+						<option value="">EN</option>
+						<option value="">繁</option>
+					</select>
+				</div>
+			</div>
+			<div class="guodu">
+			</div>
+			<div class="main">
+				<div class="box1">
+					<div class="cont1">
+						<img src="img/bg-cols-t11.png" class="fadeInDown animated aniD1 aniE3" style="position: absolute;left: 0;top: 0;" />
+					</div>
+					<div class="tupian1 zoomIn animated aniE3"><img src="img/加盟2.PNG" style="position: absolute;left: 20px;top: 70px;" /></div>
+					<div class="tupian2 zoomIn animated aniE3"><img src="img/加盟3.PNG" style="position: absolute;left: 18px;top: 185px;" /></div>
+					<div class="wenzi1 fadeIn animated aniE8" style="width: 800px;height: 72px;position: absolute;left: 130px;top: 75px;">
+						<span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;">
+				       湖北良品铺子食品有限公司是一家致力于休闲食品开发、加工分装、零售服务的专业品牌连锁运营公司。<br>
+                                    公司2011年开放加盟，加盟开放市场遍布全国各地。<br>
+                                    良品铺子已经成为了促进社会和谐发展的企业，在行业内享有良好的美誉，现已成为中国休闲食品零售行业的领导品牌。</span>
+					</div>
+					<div class="wenzi2 fadeIn animated aniE8" style="width: 390px;height: 70px;position: absolute;left: 130px;top: 210px;">
+						<span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;">
+				公司加盟理念：同心同德，合作双赢<br>
+                             良品加盟商文化：玩出生产力，学出生产力，爱出生产力</span>
+					</div>
+					<hr style="width: 1200px;height: 1px;background-color: lightgrey;border: none;position: absolute;left: 0px;bottom: 0;" />
+				</div>
+				<!--box1结束-->
+				<div class="box2">
+					<div class="cont2 rotateInDownLeft animated aniE1">
+						<img src="img/加盟4.PNG" style="position: absolute;top: 20px;left: 20px;" />
+					</div>
+					<div class="tupian3">
+						<ul>
+							<li>
+								<div class="tupian4" style="width: 120px;height: 120px;margin-bottom: 35px;">
+									<img src="img/img-guide-a1.png" class="zoomIn animated aniE3"  style="margin-bottom: 35px;margin-left: 40px;" />
+								</div>
+								<span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;" class="fadeIn animated aniE8"> 
+							品牌开店数超2000家；
+						</span>
+							</li>
+							<li>
+								<div class="tupian5" style="width: 120px;height: 120px;margin-bottom: 35px;">
+									<img src="img/img-guide-a2.png" class="zoomIn animated aniE3"  style="margin-bottom: 35px;margin-left: 40px;" />
+								</div>
+								<span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;" class="fadeIn animated aniE8"> 
+							六层品质把关，优<br>
+							质产品让顾客品味<br>
+							健康美味零食；
+						</span>
+							</li>
+							<li>
+								<div class="tupian4" style="width: 120px;height: 120px;margin-bottom: 35px;">
+									<img src="img/img-guide-a3.png" class="zoomIn animated aniE3"  style="margin-bottom: 35px;margin-left: 40px;" />
+								</div>
+								<span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;" class="fadeIn animated aniE8"> 
+							在线APP购物+社区<br>
+							一站式服务，明星<br>
+							代言，当红综艺节<br>
+							目品牌赞助，与粉<br>
+							丝甜蜜互动，从顾<br>
+							客角度出发，注重<br>
+							顾客体验；
+						</span>
+							</li>
+							<li>
+								<div class="tupian4" style="width: 120px;height: 120px;margin-bottom: 35px;">
+									<img src="img/img-guide-a4.png" class="zoomIn animated aniE3"  style="margin-bottom: 35px;margin-left: 40px;" />
+								</div>
+								<span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;" class="fadeIn animated aniE8"> 
+							行业领先门店管<br>
+							理，指导门店业绩<br>
+							提升；
+						</span>
+							</li>
+							<li>
+								<div class="tupian4" style="width: 120px;height: 120px;margin-bottom: 35px;">
+									<img src="img/img-guide-a5.png" class="zoomIn animated aniE3"  style="margin-bottom: 35px;margin-left: 40px;" />
+								</div>
+								<span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;" class="fadeIn animated aniE8"> 
+							全球先进SAP智能<br>
+							系统全面支持门店<br>
+							运营；
+						</span>
+							</li>
+							<li>
+								<div class="tupian4" style="width: 120px;height: 120px;margin-bottom: 35px;">
+									<img src="img/img-guide-a6.png" class="zoomIn animated aniE3"  style="margin-bottom: 35px;margin-left: 40px;" />
+								</div>
+								<span style="font: 400 15px/24px '黑体','微软雅黑';color: #333;text-indent: 2em;" class="fadeIn animated aniE8"> 
+							系统对货识别，物<br>
+							流基地快速将叫货<br>
+							商品送达门店；
+						</span></li>
+						</ul>
+					</div>
+				</div>
+				<!--box2结束-->
+				<div class="box4">
+					<img src="img/bg-cols-b5.jpg" style="width: 100%;height: 100%;position: absolute;top: 100px;" />
+				</div>
+				<div class="box5">
+					<div class="wenzi">
+						<div class="hubei"><span>Copyright © 湖北良品铺子食品有限公司 2018 版权所有 <a href="#" style="color: gray;">鄂ICP备09021577号</a></span></div>
+					</div>
+				</div>
+			</div>
+			<!--main结束-->
+		</div>
+	</body>
+
+</html>
